@@ -191,3 +191,23 @@
     }
 }
 
+/* (max-width:320px) */
+@media only screen and (max-width:426px){
+    .footer-body .footer-pillers .intro p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+/* (max-width:376px) */
+@media only screen and (max-width:376px){
+    .footer-body .footer-piller-a{
+        width: auto;
+        height: auto;
+    }
+    .footer-body .footer-pillers .intro {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}
