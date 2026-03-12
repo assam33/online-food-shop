@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <title>foodies</title>
 </head>
 
@@ -23,9 +24,9 @@
                     </div>
                     <div>
                         <ul>
-                            <li>Friday break time 12:30 PM to 2:30 PM</li>
-                            <li>Kitchen operational after 12:00 PM to 03:00 AM</li>
-                            <li>Delivery things are 12:00 PM to 03:00 AM</li>
+                            <li class="alpha-dtl">Friday break time 12:30 PM to 2:30 PM</li>
+                            <li class="alpha-dtl">Kitchen operational after 12:00 PM to 03:00 AM</li>
+                            <li class="alpha-dtl">Delivery things are 12:00 PM to 03:00 AM</li>
                         </ul>
                     </div>
                 </div>
@@ -54,6 +55,7 @@
                             <li><a href="#"><i class="material-icons">search</i></a></li>
                             <li><a href="#"><i class="material-icons">person</i></a></li>
                             <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                            <li><button class="menu-button"><i class="fa-duotone fa-solid fa-bars" style="--fa-primary-color: rgb(34, 18, 77); --fa-secondary-color: rgb(34, 18, 77);"></i></button></li>
                         </ul>
                     </div>
                 </div>
@@ -63,17 +65,65 @@
             <div class="nav-beta-low-links">
                 <div class="beta-links">
                     <ul>
-                        <li>
-                            <p>BAKERY</p>
+                        <li class="angle-down">
+                            <p>BAKERY</p><i class="fa-solid fa-angle-down"></i>
+                            <ul class="down-menu">
+                                <div class="down-menu-sections down-menu-sections-a">
+                                    <li><a href="#">Bread</a></li>
+                                    <li><a href="#">Brownies</a></li>
+                                    <li><a href="#">Cakes</a></li>
+                                    <li><a href="#">Customise Icecream</a></li>
+                                    <li><a href="#">donuts & Cupcake</a></li>
+                                    <li><a href="#">Pastries</a></li>
+                                    <li><a href="#">Rusk</a></li>
+                                    <li><a href="#">Salad</a></li>
+                                </div>
+                                <div class="down-menu-sections down-menu-sections-b">
+                                    <li><a href="#">Buns</a></li>
+                                    <li><a href="#">Biscuits & Khatai</a></li>
+                                    <li><a href="#">Cake Rusk</a></li>
+                                    <li><a href="#">Confectionery</a></li>
+                                    <li><a href="#">JI Dairy</a></li>
+                                    <li><a href="#">Puff Pastres</a></li>
+                                    <li><a href="#">Salted Snacks</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="angle-down">
+                            <p>DELI</p><i class="fa-solid fa-angle-down"></i>
+                            <ul class="down-menu-b">
+                                <div class="down-menu-sections down-menu-sections-a">
+                                    <li><a href="#">Burgers</a></li>
+                                    <li><a href="#">Deli Fish</a></li>
+                                    <li><a href="#">JI New Arrivals</a></li>
+                                    <li><a href="#">Per Peri Chicken</a></li>
+                                </div>
+                                <div class="down-menu-sections down-menu-sections-b">
+                                    <li><a href="#">Crispy Fried Chicken</a></li>
+                                    <li><a href="#">Italian Cuisins</a></li>
+                                    <li><a href="#">Pizza</a></li>
+                                    <li><a href="#">Sanwitch</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <!-- </li> -->
+                        <li class="angle-down">
+                            <p>PAN ASIAN</p><i class="fa-solid fa-angle-down"></i>
+                            <ul class="down-menu-c">
+                                <div class="down-menu-sections down-menu-sections-a">
+                                    <li><a href="#">Classic Entree</a></li>
+                                    <li><a href="#">Premium Entree</a></li>
+                                    <li><a href="#">Starters</a></li>
+                                </div>
+                                <div class="down-menu-sections down-menu-sections-b">
+                                    <li><a href="#">Chow Main</a></li>
+                                    <li><a href="#">Premium Entree(Seafood)</a></li>
+                                </div>
+                            </ul>
+                        </li>
                         </li>
                         <li>
-                            <p>SWEETS</p>
-                        </li>
-                        <li>
-                            <p>FAST FOOD</p>
-                        </li>
-                        <li>
-                            <p>ICECREAM</p>
+                            <p>JI ICECREAM</p>
                         </li>
                         <li>
                             <p>DRINKS</p>
@@ -232,8 +282,8 @@
     <div class="pizza-video-container">
         <div class="pizza-video"><video width="100%" height="auto" style="width: 100%; margin-left: auto; margin-right: auto; object-fit: scale-down; object-position: 50% 50%; height: 470px;" autoplay="autoplay" loop="loop" muted="" preload="auto" src="assets/images/pizza video.mp4"></video></div>
         <div class="pizza-video-detail">
-            <h1>Delicious Slices,<br>Crafted With <br>Passion!</h1>
-            <p>Indulge in the perfect blend of cheesy goodness and mouth <br>watering toppings with Jalal Sons irresistible pizzas.</p>
+            <div><h1>Delicious Slices,Crafted With Passion!</h1></div>
+            <div><p>Indulge in the perfect blend of cheesy goodness and mouth watering toppings with Jalal Sons irresistible pizzas.</p></div>
         </div>
 </div>
 </div>
@@ -371,6 +421,7 @@
             loop: true
         });
     </script>
+
 </body>
 
 </html>
