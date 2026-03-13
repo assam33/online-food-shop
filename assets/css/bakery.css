@@ -1,0 +1,129 @@
+*{
+   margin: 0%;
+   padding: 0%;
+   box-sizing: border-box;
+   font-family: "Oswald", sans-serif;
+   color: white;
+}
+
+.wrapper{
+max-width: 1366px;
+margin: 0 auto;
+background-color: pink;
+}
+.bakery{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.bakery h1{
+    text-align: center;
+    padding: 50px;
+    background-color: black;
+}
+.bakry-items{
+    width: 100%;
+    height: 100%;
+    background-color: #161616;;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    /* justify-content: center; */
+}
+.bakery-cards{
+    display: grid;
+    /* grid-template-columns: 270px 270px 270px 270px ; */
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 0px;
+    row-gap: 10px;
+}
+.bakery-cards .card{
+    width: 220px;
+    height: 391px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+}
+.bakery-cards .card img{
+    width: 100%;
+    height: 269px;
+    object-fit: cover;
+}
+.bakery-cards .card .types-price{
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+}
+.bakery-cards .card p{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.bakery-cards .card button{
+    width: 100%;
+    height: 44px;
+    background-color: #ff0000;
+    /* background-color: #ff6b6b; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* add to cart wala box  */
+.cart-section {
+    background-color: #a35555;
+}
+.cart-section h1{
+    background-color: #2c0202;
+}
+/* add item in cart  */
+.cart-section .cart-box .in-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+    padding-top: 10px;
+}
+.cart-section .cart-box .in-cart img{
+    width: 50px;
+    height: 50px;
+}
+/* number counter  */
+.qty-box{
+    display: flex;
+    gap: 10px;
+}
+.qty-box button{
+    padding:  0 10px;
+}
+.qty-box, .qty-box button{
+    background-color: #2c0202;
+    font-size: 20px;
+}
+/* delete from cart  */
+.delbtn{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* total price section  */
+.price-total{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    border-top: 3px solid black;
+    margin-top: 10px;
+}
