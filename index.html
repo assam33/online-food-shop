@@ -8,7 +8,9 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <title>foodies</title>
@@ -37,7 +39,7 @@
                 <div class="nav-beta-top">
                     <div class="locations">
                         <i class="material-icons">location_on</i><select name="location" disabled>
-                            <option value="dhaka" selected>Saudi Arabia,Makkah</option>
+                            <option value="dhaka" selected>Saudia Arabia,Makkah</option>
                             <option value="chittagong">Chittagong</option>
                             <option value="khulna">Khulna</option>
                             <option value="rajshahi">Rajshahi</option>
@@ -47,15 +49,28 @@
                     </div>
 
                     <div class="logo">
-                        <a href="#"><img src="assets/images/ssi.png" alt="Jatala Internationals" width="50px" height="50px"></a>
+                        <a href="#"><img src="assets/images/ssi.png" alt="Jatala Internationals" width="50px"
+                                height="50px"></a>
                     </div>
 
                     <div class="three-icons">
                         <ul>
                             <li><a href="#"><i class="material-icons">search</i></a></li>
                             <li><a href="#"><i class="material-icons">person</i></a></li>
-                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
-                            <li><button class="menu-button"><i class="fa-duotone fa-solid fa-bars" style="--fa-primary-color: rgb(34, 18, 77); --fa-secondary-color: rgb(34, 18, 77);"></i></button></li>
+                            <li class=" cart-icon"><a href="#"><i class="material-icons" >shopping_cart</i>
+                        <div class="cart-section">
+                            <div class="cart-title"><h1>CART ITEMS</h1></div>
+                            <div class="cart-box"></div> <!-- items displaued in cart store -->
+                            <div class="price-total">
+                                <h4>Total: </h4>
+                                <h4 class="pcount">Rs 0.00</h4>
+                            </div>
+                        </div> <!--cart section end -->
+                            </a></li>
+<!-- menu button  -->
+                            <li><button class="menu-button"><i class="fa-duotone fa-solid fa-bars"
+                                        style="--fa-primary-color: rgb(34, 18, 77); --fa-secondary-color: rgb(34, 18, 77);"></i></button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +108,7 @@
                             <p>DELI</p><i class="fa-solid fa-angle-down"></i>
                             <ul class="down-menu-b">
                                 <div class="down-menu-sections down-menu-sections-a">
-                                    <li><a href="#">Burgers</a></li>
+                                    <li><a href="bakery.html" target="_blank">Burgers</a></li>
                                     <li><a href="#">Deli Fish</a></li>
                                     <li><a href="#">JI New Arrivals</a></li>
                                     <li><a href="#">Per Peri Chicken</a></li>
@@ -169,244 +184,266 @@
     <section class="display-section">
         <div class="wrapper">
             <div class="display-items">
-<!-- display heading  -->
-            <div class="display-items-heading">
-                <h2>Starters</h2>
-            </div>
-<!-- display cards  -->
-            <div class="display-items-cards">
-<!-- soup display  -->
-                <div class="card">
-                    <img src="assets/images/soup1.webp" alt="">
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>THE FAMOUS SOUP</p>
-                            <p>Rs 600</p>
-                        </div>
-                        <button>ADD TO CART</button>
-                    </div>
+                <!-- display heading  -->
+                <div class="display-items-heading">
+                    <h2>Starters</h2>
                 </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/soup2.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Szechum Soup (Single Serving)</p>
-                            <p>Rs 499</p>
+                <!-- display cards  -->
+                <div class="display-items-cards">
+                    <!-- soup display  -->
+                    <div class="card">
+                        <img src="assets/images/soup1.webp" alt="">
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>THE FAMOUS SOUP</p>
+                                <p>Rs 600</p>
+                            </div>
+                            <button>ADD TO CART</button>
                         </div>
-                        <button>ADD TO CART</button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/soup3.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Hot & Sour Soup (Single Serving)</p>
-                            <p>Rs 499</p>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/soup2.webp" alt="">
                         </div>
-                        <button>ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/soup4.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Chicken Corn Soup (Single Serving)</p>
-                            <p>Rs 499</p>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Szechum Soup (Single Serving)</p>
+                                <p>Rs 499</p>
+                            </div>
+                            <button>ADD TO CART</button>
                         </div>
-                        <button>ADD TO CART</button>
                     </div>
-                </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/soup3.webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Hot & Sour Soup (Single Serving)</p>
+                                <p>Rs 499</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/soup4.webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Chicken Corn Soup (Single Serving)</p>
+                                <p>Rs 499</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
 
-<!-- burger display  -->
-<div class="burger-heading"><h2>Burgers</h2></div>
-            <!-- <div class="display-items-cards"> -->
-                <div class="card">
-                    <img src="assets/images/burger1.webp" alt="">
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Crispy Chicken Burger</p>
-                            <p>Rs 450</p>
+                    <!-- burger display  -->
+                    <div class="burger-heading">
+                        <h2>Burgers</h2>
+                    </div>
+                    <!-- <div class="display-items-cards"> -->
+                    <div class="card">
+                        <img src="assets/images/burger1.webp" alt="">
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Crispy Chicken Burger</p>
+                                <p>Rs 450</p>
+                            </div>
+                            <button>ADD TO CART</button>
                         </div>
-                        <button>ADD TO CART</button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/burger2.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Peri Peri Chicken Burger</p>
-                            <p>Rs 799</p>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/burger2.webp" alt="">
                         </div>
-                        <button>ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/burger3.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Hot Chick Burger</p>
-                            <p>Rs 599</p>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Peri Peri Chicken Burger</p>
+                                <p>Rs 799</p>
+                            </div>
+                            <button>ADD TO CART</button>
                         </div>
-                        <button>ADD TO CART</button>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/burger4.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Double Beef Cheese Burger</p>
-                            <p>Rs 899</p>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/burger3.webp" alt="">
                         </div>
-                        <button>ADD TO CART</button>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Hot Chick Burger</p>
+                                <p>Rs 599</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
                     </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/burger4.webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Double Beef Cheese Burger</p>
+                                <p>Rs 899</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <!-- </div> -->
                 </div>
-            <!-- </div> -->
-</div>
+            </div>
         </div>
-    </div>
-<!-- pizza video  -->
-<div class="pizza-video-section">
-    <div class="wrapper">
-    <div class="pizza-video-container">
-        <div class="pizza-video"><video width="100%" height="auto" style="width: 100%; margin-left: auto; margin-right: auto; object-fit: scale-down; object-position: 50% 50%; height: 470px;" autoplay="autoplay" loop="loop" muted="" preload="auto" src="assets/images/pizza video.mp4"></video></div>
-        <div class="pizza-video-detail">
-            <div><h1>Delicious Slices,Crafted With Passion!</h1></div>
-            <div><p>Indulge in the perfect blend of cheesy goodness and mouth watering toppings with Jalal Sons irresistible pizzas.</p></div>
+        <!-- pizza video  -->
+        <div class="pizza-video-section">
+            <div class="wrapper">
+                <div class="pizza-video-container">
+                    <div class="pizza-video"><video width="100%" height="auto"
+                            style="width: 100%; margin-left: auto; margin-right: auto; object-fit: scale-down; object-position: 50% 50%; height: 470px;"
+                            autoplay="autoplay" loop="loop" muted="" preload="auto"
+                            src="assets/images/pizza video.mp4"></video></div>
+                    <div class="pizza-video-detail">
+                        <div>
+                            <h1>Delicious Slices,Crafted With Passion!</h1>
+                        </div>
+                        <div>
+                            <p>Indulge in the perfect blend of cheesy goodness and mouth watering toppings with Jalal
+                                Sons irresistible pizzas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-</div>
-</div>
-</div>
-<!-- pizza section  -->
-<div class="pizza-card-section">
-<div class="wrapper">
-    <div class="pizza-heading"><h2>Freshly baked, just for you</h2></div>
-    <div class="pizza-container">
-                <div class="card">
-                    <img src="assets/images/pizza (1).webp" alt="">
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Peri Peri Pizza(L)</p>
-                            <p>Rs 2200</p>
+        <!-- pizza section  -->
+        <div class="pizza-card-section">
+            <div class="wrapper">
+                <div class="pizza-heading">
+                    <h2>Freshly baked, just for you</h2>
+                </div>
+                <div class="pizza-container">
+                    <div class="card">
+                        <img src="assets/images/pizza (1).webp" alt="">
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Peri Peri Pizza(L)</p>
+                                <p>Rs 2200</p>
+                            </div>
+                            <button>ADD TO CART</button>
                         </div>
-                        <button>ADD TO CART</button>
+                    </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/pizza (2).webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Supreme Beef Pizza(L)</p>
+                                <p>Rs 2200</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/sandwitch1.webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>Fajita Sandwich</p>
+                                <p>Rs 599</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="display-items-image">
+                            <img src="assets/images/sandwitch2.webp" alt="">
+                        </div>
+                        <div class="display-items-detail">
+                            <div class="types-price">
+                                <p>BBQ Sandwich</p>
+                                <p>Rs 599</p>
+                            </div>
+                            <button>ADD TO CART</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/pizza (2).webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Supreme Beef Pizza(L)</p>
-                            <p>Rs 2200</p>
-                        </div>
-                        <button>ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/sandwitch1.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>Fajita Sandwich</p>
-                            <p>Rs 599</p>
-                        </div>
-                        <button>ADD TO CART</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="display-items-image">
-                        <img src="assets/images/sandwitch2.webp" alt="">
-                    </div>
-                    <div class="display-items-detail">
-                        <div class="types-price">
-                            <p>BBQ Sandwich</p>
-                            <p>Rs 599</p>
-                        </div>
-                        <button>ADD TO CART</button>
-                    </div>
-                </div>
-    </div>
-</div>
-</div>
+            </div>
+        </div>
     </section>
 
-<!-- footer section  -->
-<section class="footer-section">
-    <div class="wrapper">
-        <div class="footer-body">
-<!-- piller a  -->
-            <div class="footer-pillers footer-piller-a">
-                <div class="logo"><a href="#"><img src="assets/images/ssi.png" alt="Jatala Internationals"></a></div>
-                <div class="intro"><p>Jatala Internationals(JI) is establishedd in 2025 by Chaudhary Ishtiaq Aslam,the father of SM.Assam and Taha Ishtaiq.JI started in Makkah,Saudi Arabia</p></div>
-                <div class="icons">
-                    <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <!-- footer section  -->
+    <section class="footer-section">
+        <div class="wrapper">
+            <div class="footer-body">
+                <!-- piller a  -->
+                <div class="footer-pillers footer-piller-a">
+                    <div class="logo"><a href="#"><img src="assets/images/ssi.png" alt="Jatala Internationals"></a>
+                    </div>
+                    <div class="intro">
+                        <p>Jatala Internationals(JI) is establishedd in 2025 by Chaudhary Ishtiaq Aslam,the father of
+                            SM.Assam and Taha Ishtaiq.JI started in Makkah,Saudi Arabia</p>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/?"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="location">
+                        <p>Location</p>
+                    </div>
                 </div>
-                <div class="location"><p>Location</p></div>
+                <!-- piller b  -->
+                <div class="footer-pillers footer-piller-b">
+                    <h3>Site Links</h3>
+                    <ul>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Pan Asia</a></li>
+                        <li><a href="#">Deals</a></li>
+                        <li><a href="#">Make a box</a></li>
+                        <li><a href="#">Customized Cake</a></li>
+                    </ul>
+                </div>
+                <!-- piller c  -->
+                <div class="footer-pillers footer-piller-c">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conitions</a></li>
+                        <li><a href="#">Franchise Form</a></li>
+                        <li><a href="#">ownloa App</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- piller d  -->
+                <div class="footer-pillers footer-piller-d">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>
+                            <h3>Customer support|quries</h3>
+                        </li>
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Ph#: 03167519007</a></li>
+                        <li><a href="#">Ph#: 03167519007</a></li>
+                        <li>
+                            <h3>For complaints only</h3>
+                        </li>
+                        <li><a href="#">Ph#: 03167519007</a></li>
+                        <li><a href="#">UAN, 055-751-9007-000</a></li>
+                        <li><a href="#">info@jatalainternationals.com.pk</a></li>
+                    </ul>
+                </div>
             </div>
-<!-- piller b  -->
-            <div class="footer-pillers footer-piller-b">
-                <h3>Site Links</h3>
-                <ul>
-                    <li><a href="#">Bakery</a></li>
-                    <li><a href="#">Grocery</a></li>
-                    <li><a href="#">Pan Asia</a></li>
-                    <li><a href="#">Deals</a></li>
-                    <li><a href="#">Make a box</a></li>
-                    <li><a href="#">Customized Cake</a></li>
-                </ul>
-            </div>
-<!-- piller c  -->
-            <div class="footer-pillers footer-piller-c">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conitions</a></li>
-                    <li><a href="#">Franchise Form</a></li>
-                    <li><a href="#">ownloa App</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-<!-- piller d  -->
-            <div class="footer-pillers footer-piller-d">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li><h3>Customer support|quries</h3></li>
-                    <li><a href="#">Grocery</a></li>
-                    <li><a href="#">Ph#: 03167519007</a></li>
-                    <li><a href="#">Ph#: 03167519007</a></li>
-                    <li><h3>For complaints only</h3></li>
-                    <li><a href="#">Ph#: 03167519007</a></li>
-                    <li><a href="#">UAN, 055-751-9007-000</a></li>
-                    <li><a href="#">info@jatalainternationals.com.pk</a></li>
-                </ul>
-            </div>
+
         </div>
-        
-    </div>
-</section>
+    </section>
 
 
-                    <!-- JavaScript -->
+    <!-- JavaScript -->
 
+    <script src="link-menu-dropdown.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -421,8 +458,6 @@
             loop: true
         });
     </script>
-
 </body>
 
 </html>
-
